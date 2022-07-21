@@ -1,16 +1,33 @@
 {
   "name": "squad-server-best-seeders",
   "version": "1.0.0",
-  "type": "module",
   "description": "Generates ",
-  "main": "index.js",
+  "main": "./index.js",
+  "private": "true",
   "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "deploy-commands": "node --experimental-specifier-resolution=node ./src/deploy-commands.js",
+    "deploy": "serverless deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "@types/aws-lambda": "^8.10.101",
     "dayjs": "^1.11.3",
+    "discord-api-types": "^0.36.2",
+    "discord-interactions": "^3.2.0",
+    "discord.js": "^13.8.1",
     "got": "^12.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "rollup": "^2.77.0"
   }
 }

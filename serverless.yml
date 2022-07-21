@@ -1,0 +1,16 @@
+service: brickbot
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  httpApi:
+    cors: true
+
+functions:
+  brickbot:
+    handler: dist/bundle.handler
+    events:
+      - httpApi:
+          path: /
+          method: POST
