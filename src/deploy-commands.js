@@ -11,6 +11,7 @@ const commandNameDescriptionMaps = {
   shouldsquashstoptalking: 'Brick decides.',
   seedersoftheweek: 'Brick dumps a list of the top 10 no-lifers who have seeded the Squad server this week.',
   thankyouace: 'Brick shows appreciation for discord\'s most valued user.',
+  checkthestatusmonitor: 'Edd needs to find a welding tool',
 };
 
 const commands = Object.keys(commandNameDescriptionMaps)

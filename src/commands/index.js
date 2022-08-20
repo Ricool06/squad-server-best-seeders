@@ -4,6 +4,7 @@ import shouldsquashstoptalking from './shouldsquashstoptalking.js';
 import seedersoftheweek from './seedersoftheweek.js';
 import thankyouace from './thankyouace.js';
 import { DEFAULT_RESULT } from '../utils.js';
+import checkthestatusmonitor from './checkthestatusmonitor.js';
 
 export default async commandName => {
   switch (commandName) {
@@ -21,6 +22,9 @@ export default async commandName => {
 
     case ('thankyouace'):
       return thankyouace();
+
+    case ('checkthestatusmonitor'):
+      return checkthestatusmonitor();
 
     default:
       return DEFAULT_RESULT;

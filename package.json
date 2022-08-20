@@ -6,7 +6,7 @@
   "private": "true",
   "scripts": {
     "build": "rollup --config rollup.config.js",
-    "deploy-commands": "node --experimental-specifier-resolution=node ./src/deploy-commands.mjs",
+    "deploy-commands": "node --experimental-specifier-resolution=node ./src/deploy-commands.js",
     "deploy": "serverless deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -149,3 +149,4 @@ dist
 .gitsecret/keys/random_seed
 !*.secret
 secrets/index.js
+/*.tar.gz.gpg
